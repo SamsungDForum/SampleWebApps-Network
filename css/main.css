@@ -1,0 +1,48 @@
+#network-info-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: inherit;
+}
+
+#network-info {
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+}
+
+#network-info .left-column,
+#network-info .right-column {
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+#network-status {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    display: block;
+    padding: 8px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#network-status.connected {
+    color: #d4edda;
+    background-color: #196b2c;
+    border-color: #c3e6cb;
+}
+
+#network-status.disconnected {
+    color: #f8d7da;
+    background-color: #96323c;
+    border-color: #f5c6cb;
+}
